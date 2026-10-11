@@ -16,19 +16,22 @@ section{padding:150px 0}.head{display:grid;grid-template-columns:.65fr 1.35fr;ga
 @media(max-width:650px){.wrap{width:calc(100% - 28px)}section{padding:100px 0}.hero h1{font-size:17vw}.stage{height:410px;min-height:0}.stageFrame{inset:4% 0}.heroNote{display:none}.services,.catalog{grid-template-columns:1fr}.service{border-right:0!important;border-bottom:1px solid var(--line)}.service:last-child{border-bottom:0}.board{display:flex;flex-direction:column}.tile{height:260px}.logoTile{height:330px}.tile.process{height:240px}.step{grid-template-columns:45px 1fr;padding:28px 0}.step p{grid-column:2}.techCopy h2{font-size:19vw}.ring{width:100vw;right:-45%;top:28%}.contact h2{font-size:19vw}.contactGrid{gap:50px}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 @media(max-width:1000px){.projectMoreGrid{grid-template-columns:1fr 1fr}}@media(max-width:650px){.projectMoreGrid{grid-template-columns:1fr}.projectMoreGrid .tile{min-height:240px}}
-/* Ajuste visual: dar más aire a las seis imágenes sin reducir el logotipo */
+/* Ajuste de la retícula: el mosaico central conserva su celda; solo se reduce el marco interior */
 @media(min-width:1001px){
   .board{grid-template-columns:1fr 1.3fr 1fr}
-  .logoTile{width:88%;height:84%;justify-self:center;align-self:center;background:radial-gradient(circle at 50% 45%,#7e53ff20,transparent 43%),#0b0b10}
-  .logoTile img{width:38.8%;max-width:165px}
+  .logoTile{width:100%;height:100%;justify-self:stretch;align-self:stretch;border-color:transparent;background:radial-gradient(circle at 50% 45%,#7e53ff0b,transparent 48%),#08080c}
+  .logoTile::before{content:"";position:absolute;inset:8% 6%;border:1px solid var(--line);background:radial-gradient(circle at 50% 45%,#7e53ff20,transparent 43%),#0b0b10;z-index:0;pointer-events:none}
+  .logoTile img{width:34.1%;max-width:165px;position:relative;z-index:1}
 }
 @media(min-width:651px) and (max-width:1000px){
-  .logoTile{width:88%;height:84%;justify-self:center;align-self:center;background:radial-gradient(circle at 50% 45%,#7e53ff20,transparent 43%),#0b0b10}
-  .logoTile img{width:36.4%;max-width:165px}
+  .logoTile{width:100%;height:100%;justify-self:stretch;align-self:stretch;border-color:transparent;background:radial-gradient(circle at 50% 45%,#7e53ff0b,transparent 48%),#08080c}
+  .logoTile::before{content:"";position:absolute;inset:8% 6%;border:1px solid var(--line);background:radial-gradient(circle at 50% 45%,#7e53ff20,transparent 43%),#0b0b10;z-index:0;pointer-events:none}
+  .logoTile img{width:32%;max-width:165px;position:relative;z-index:1}
 }
 @media(max-width:650px){
-  .logoTile{width:90%;height:280px;align-self:center;background:radial-gradient(circle at 50% 45%,#7e53ff20,transparent 43%),#0b0b10}
-  .logoTile img{width:35.6%;max-width:165px}
+  .logoTile{width:100%;height:330px;align-self:stretch;justify-self:stretch;border-color:transparent;background:radial-gradient(circle at 50% 45%,#7e53ff0b,transparent 48%),#08080c}
+  .logoTile::before{content:"";position:absolute;inset:25px 5%;border:1px solid var(--line);background:radial-gradient(circle at 50% 45%,#7e53ff20,transparent 43%),#0b0b10;z-index:0;pointer-events:none}
+  .logoTile img{width:32%;max-width:165px;position:relative;z-index:1}
 }
 </style></head><body>
 <div id="loader"><div class="loadbox"><div class="loadtop"><div class="loadbrand">VOLUMIA</div><span class="mono" id="pct">0%</span></div><div class="loadline"><i id="bar"></i></div></div></div>
