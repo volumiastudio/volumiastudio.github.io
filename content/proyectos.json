@@ -37,5 +37,13 @@
     "image": "/media/3dprintedarchitectural-2.jpg",
     "alt": "Modelos para Arquitectura en 3D",
     "visible": true
+  },
+  {
+    "title": "Prototipos y soluciones prácticas",
+    "category": "Prototipos y soluciones prácticas",
+    "description": "Prototipos y soluciones prácticas para ingenieria, empresas de diseño o trabajos de universidad.",
+    "image": "/media/prototipos-2.jpg",
+    "alt": "Prototipos y soluciones prácticas",
+    "visible": true
   }
 ]
