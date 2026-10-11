@@ -29,5 +29,13 @@
     "image": "/media/productshowcase-3.jpg",
     "alt": "Lamparas litofánicas",
     "visible": true
+  },
+  {
+    "title": "Modelos para Arquitectura en 3D",
+    "category": "Arquitectura en 3D",
+    "description": "Modelos en impresión 3D, impresos para presentación de proyectos de arquitectura o maquetas de trabajos.",
+    "image": "/media/3dprintedarchitectural-2.jpg",
+    "alt": "Modelos para Arquitectura en 3D",
+    "visible": true
   }
 ]
